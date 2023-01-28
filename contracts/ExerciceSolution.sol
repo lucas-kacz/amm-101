@@ -14,29 +14,13 @@ contract ExerciceSolution{
     IUniswapV2Router01 public uniswap_v2_router;
     MYERC20 public myerc20;
 
-    // function swapYourTokenForEth()
-    //     address _tokenIn,
-    //     address _tokenOut,
-    //     uint256 _amountIn,
-    //     uint256 _amountOutMin,
-    //     address _to
-    // )external{
-    //     IERC20(_tokenIn).transferFrom(msg.sender, address(this), _amountIn);
-    //     IERC20(_tokenIn).approve(UNISWAP_V2_ROUTER, _amountIn);
-
-    //     address[] memory path;
-    //     path = new address[](3);
-    //     path[0] = _tokenIn;
-    //     path[1] = WETH;
-    //     path[2] = _tokenOut;
-
-    //     IUniswapV2Router01(UNISWAP_V2_ROUTER).swapExactTokensForTokens(
-    //         _amountIn, 
-    //         _amountOutMin, 
-    //         path, 
-    //         _to, 
-    //         block.timestamp);
-    // }
+    constructor(MYERC20 _myERC20, IUniswapV2Router01 _uniswapV2Router)
+        public
+        payable
+    {
+        myerc20 = _myERC20;
+        uniswap_v2_router = _uniswapV2Router;
+    }
 
     function swapYourTokensForETH() external {
         myerc20.approve(address(uniswap_v2_router), 0.01 ether);

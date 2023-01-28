@@ -2,6 +2,22 @@
   "contractName": "ExerciceSolution",
   "abi": [
     {
+      "inputs": [
+        {
+          "internalType": "contract MYERC20",
+          "name": "_myERC20",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IUniswapV2Router01",
+          "name": "_uniswapV2Router",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
       "inputs": [],
       "name": "myerc20",
       "outputs": [
@@ -12,8 +28,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -26,8 +41,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -37,21 +51,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"myerc20\",\"outputs\":[{\"internalType\":\"contract MYERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"swapYourTokensForETH\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"uniswap_v2_router\",\"outputs\":[{\"internalType\":\"contract IUniswapV2Router01\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ExerciceSolution.sol\":\"ExerciceSolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ExerciceSolution.sol\":{\"keccak256\":\"0xaa2733c854b98c2039b5badaf2ce28bdd00c9286a747c3d770f8bb7739597bc2\",\"urls\":[\"bzz-raw://a3c9b703cb1865f30472f76b2ba8416e5f3d3fea26441fd874352a549b8acb86\",\"dweb:/ipfs/QmWA3Um66hKwkP6n2FsZ4au2Js4RVq1wT4PttQuetfxEa7\"]},\"project:/contracts/MyERC20.sol\":{\"keccak256\":\"0x669fd9e996376efeb7b05e6189a31dcd2cbf58d5b78737c3b8ba366f29167a57\",\"urls\":[\"bzz-raw://d64923c8e381eccdcee9498d3661f50ccae851976bfeb6dff0e95975ecdc9514\",\"dweb:/ipfs/QmTMUfjGHKuhPECbDxLjHJZi4wY8PoUGWLiRHznXCgYfu3\"]},\"project:/contracts/utils/IUniswapV2Factory.sol\":{\"keccak256\":\"0xfbe2852fd8dc8d58eeb7e37e7c4e6b68fbf6d2e41fff1e6bc3d4d19eba14d778\",\"urls\":[\"bzz-raw://2831f120be35b4da989e16f61961f2c0cefecc835f687897e965c313b2478633\",\"dweb:/ipfs/QmRnPiD1eSwNUySVHPQbTGoW1L48B75UDijB1HtJd6DGUP\"]},\"project:/contracts/utils/IUniswapV2Router.sol\":{\"keccak256\":\"0xfe83a9e3c9130c3e834aa2b5731b46c3ef512f37b8ce354e15c53f918f31fb7a\",\"urls\":[\"bzz-raw://6444ce3d89164b97ead0de21f392d738838f823c8a9a22a327b06cd5e9c52a8d\",\"dweb:/ipfs/QmZ4xbNr85BhiK9NVyef127QekKfHVS5ShLmmboXk9a9gr\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610541806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806332565029146100465780633f8dd44514610090578063a8863f831461009a575b600080fd5b61004e6100e4565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610098610109565b005b6100a26104e5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663095ea7b36000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16662386f26fc100006040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b505050506040513d602081101561020457600080fd5b810190808051906020019092919050505050606060026040519080825280602002602001820160405280156102485781602001602082028038833980820191505090505b509050732b1a884dc7a8f0cc17939928895d9d7cb91460748160008151811061026d57fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505073b4fbf271143f4fbf7b91a5ded31805e42b2208d6816001815181106102c957fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166338ed1739662386f26fc10000600a8430426040518663ffffffff1660e01b815260040180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828103825285818151815260200191508051906020019060200280838360005b838110156103e35780820151818401526020810190506103c8565b505050509050019650505050505050600060405180830381600087803b15801561040c57600080fd5b505af1158015610420573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561044a57600080fd5b810190808051604051939291908464010000000082111561046a57600080fd5b8382019150602082018581111561048057600080fd5b825186602082028301116401000000008211171561049d57600080fd5b8083526020830192505050908051906020019060200280838360005b838110156104d45780820151818401526020810190506104b9565b505050509050016040525050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea26469706673582212209750e24487a7b6749525bf5c0bc55fe8088e585474bc897262d1a669a3bd9cb664736f6c63430006020033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806332565029146100465780633f8dd44514610090578063a8863f831461009a575b600080fd5b61004e6100e4565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610098610109565b005b6100a26104e5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663095ea7b36000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16662386f26fc100006040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b505050506040513d602081101561020457600080fd5b810190808051906020019092919050505050606060026040519080825280602002602001820160405280156102485781602001602082028038833980820191505090505b509050732b1a884dc7a8f0cc17939928895d9d7cb91460748160008151811061026d57fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505073b4fbf271143f4fbf7b91a5ded31805e42b2208d6816001815181106102c957fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166338ed1739662386f26fc10000600a8430426040518663ffffffff1660e01b815260040180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828103825285818151815260200191508051906020019060200280838360005b838110156103e35780820151818401526020810190506103c8565b505050509050019650505050505050600060405180830381600087803b15801561040c57600080fd5b505af1158015610420573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561044a57600080fd5b810190808051604051939291908464010000000082111561046a57600080fd5b8382019150602082018581111561048057600080fd5b825186602082028301116401000000008211171561049d57600080fd5b8083526020830192505050908051906020019060200280838360005b838110156104d45780820151818401526020810190506104b9565b505050509050016040525050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea26469706673582212209750e24487a7b6749525bf5c0bc55fe8088e585474bc897262d1a669a3bd9cb664736f6c63430006020033",
-  "sourceMap": "191:1681:7:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;191:1681:7;;;;;;;",
-  "deployedSourceMap": "191:1681:7:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;191:1681:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:43;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1405:464;;;:::i;:::-;;620:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;570:43;;;;;;;;;;;;;:::o;1405:464::-;1457:7;;;;;;;;;;;:15;;;1481:17;;;;;;;;;;;1501:10;1457:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1457:55:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1457:55:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1457:55:7;;;;;;;;;;;;;;;;;1525:21;1578:1;1564:16;;;;;;;;;;;;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;1564:16:7;;;;1557:23;;1601:42;1591:4;1596:1;1591:7;;;;;;;;;;;;;:52;;;;;;;;;;;351:42;1654:4;1659:1;1654:7;;;;;;;;;;;;;:14;;;;;;;;;;;1681:17;;;;;;;;;;;:42;;;1738:10;1764:6;1786:4;1814;1835:15;1681:180;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1681:180:7;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1681:180:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1681:180:7;;;;;;39:16:-1;36:1;17:17;2:54;1681:180:7;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;13:2;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1681:180:7;;;;;;;;;;;;;19:11:-1;14:3;11:20;8:2;;;44:1;41;34:12;8:2;71:11;66:3;62:21;55:28;;123:4;118:3;114:14;159:9;141:16;138:31;135:2;;;182:1;179;172:12;135:2;219:3;213:10;331:9;325:2;311:12;307:21;289:16;285:44;282:59;261:11;247:12;244:29;233:116;230:2;;;362:1;359;352:12;230:2;385:12;380:3;373:25;421:4;416:3;412:14;405:21;;0:433;;1681:180:7;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1681:180:7;;;;;;;;;;;;1405:464;:::o;620:22::-;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.6.2;\r\nimport \"./utils/IUniswapV2Factory.sol\";\r\nimport \"./utils/IUniswapV2Router.sol\";\r\nimport \"./MyERC20.sol\";\r\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\r\n\r\ncontract ExerciceSolution{\r\n\r\n    address private constant UNISWAP_V2_ROUTER = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;\r\n    address private constant WETH = 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6;\r\n    // address private constant MYERC20 = 0xaD7b3dC82BBf823BD90Ab8A0A6C6e2cD566AcBe3;\r\n    address private constant PAIR = 0xCeD6525a19818992606D8B9003EB2fC538f0A64C;\r\n\r\n    IUniswapV2Router01 public uniswap_v2_router;\r\n    MYERC20 public myerc20;\r\n\r\n    // function swapYourTokenForEth()\r\n    //     address _tokenIn,\r\n    //     address _tokenOut,\r\n    //     uint256 _amountIn,\r\n    //     uint256 _amountOutMin,\r\n    //     address _to\r\n    // )external{\r\n    //     IERC20(_tokenIn).transferFrom(msg.sender, address(this), _amountIn);\r\n    //     IERC20(_tokenIn).approve(UNISWAP_V2_ROUTER, _amountIn);\r\n\r\n    //     address[] memory path;\r\n    //     path = new address[](3);\r\n    //     path[0] = _tokenIn;\r\n    //     path[1] = WETH;\r\n    //     path[2] = _tokenOut;\r\n\r\n    //     IUniswapV2Router01(UNISWAP_V2_ROUTER).swapExactTokensForTokens(\r\n    //         _amountIn, \r\n    //         _amountOutMin, \r\n    //         path, \r\n    //         _to, \r\n    //         block.timestamp);\r\n    // }\r\n\r\n    function swapYourTokensForETH() external {\r\n        myerc20.approve(address(uniswap_v2_router), 0.01 ether);\r\n\r\n        address[] memory path;\r\n        path = new address[](2);\r\n        path[0] = 0x2B1a884Dc7a8f0cc17939928895D9D7cb9146074;\r\n        path[1] = WETH;\r\n\r\n        uniswap_v2_router.swapExactTokensForTokens(\r\n            0.01 ether, \r\n            10 wei, \r\n            path, \r\n            address(this), \r\n            block.timestamp\r\n        );\r\n    }\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract MYERC20\",\"name\":\"_myERC20\",\"type\":\"address\"},{\"internalType\":\"contract IUniswapV2Router01\",\"name\":\"_uniswapV2Router\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"myerc20\",\"outputs\":[{\"internalType\":\"contract MYERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"swapYourTokensForETH\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"uniswap_v2_router\",\"outputs\":[{\"internalType\":\"contract IUniswapV2Router01\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ExerciceSolution.sol\":\"ExerciceSolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3\",\"urls\":[\"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e\",\"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"project:/contracts/ExerciceSolution.sol\":{\"keccak256\":\"0x7b583d47de2d6774d2302acbbd4ed2430d0e5e25135328a2c3b8d0f1d7379932\",\"urls\":[\"bzz-raw://97a3e6eb154a5b3db204fdc18eec7e28e43e785171c0466354eb6f678c322ab5\",\"dweb:/ipfs/QmX7dH4bdY8fH3auGqhAUVdKrwZqGqUCtim4Z6FSow7mns\"]},\"project:/contracts/MyERC20.sol\":{\"keccak256\":\"0x669fd9e996376efeb7b05e6189a31dcd2cbf58d5b78737c3b8ba366f29167a57\",\"urls\":[\"bzz-raw://d64923c8e381eccdcee9498d3661f50ccae851976bfeb6dff0e95975ecdc9514\",\"dweb:/ipfs/QmTMUfjGHKuhPECbDxLjHJZi4wY8PoUGWLiRHznXCgYfu3\"]},\"project:/contracts/utils/IUniswapV2Factory.sol\":{\"keccak256\":\"0xfbe2852fd8dc8d58eeb7e37e7c4e6b68fbf6d2e41fff1e6bc3d4d19eba14d778\",\"urls\":[\"bzz-raw://2831f120be35b4da989e16f61961f2c0cefecc835f687897e965c313b2478633\",\"dweb:/ipfs/QmRnPiD1eSwNUySVHPQbTGoW1L48B75UDijB1HtJd6DGUP\"]},\"project:/contracts/utils/IUniswapV2Router.sol\":{\"keccak256\":\"0xfe83a9e3c9130c3e834aa2b5731b46c3ef512f37b8ce354e15c53f918f31fb7a\",\"urls\":[\"bzz-raw://6444ce3d89164b97ead0de21f392d738838f823c8a9a22a327b06cd5e9c52a8d\",\"dweb:/ipfs/QmZ4xbNr85BhiK9NVyef127QekKfHVS5ShLmmboXk9a9gr\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040516106143803806106148339818101604052604081101561002657600080fd5b81019080805190602001909291908051906020019092919050505081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610541806100d36000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806332565029146100465780633f8dd44514610090578063a8863f831461009a575b600080fd5b61004e6100e4565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610098610109565b005b6100a26104e5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663095ea7b36000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16662386f26fc100006040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b505050506040513d602081101561020457600080fd5b810190808051906020019092919050505050606060026040519080825280602002602001820160405280156102485781602001602082028038833980820191505090505b509050732b1a884dc7a8f0cc17939928895d9d7cb91460748160008151811061026d57fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505073b4fbf271143f4fbf7b91a5ded31805e42b2208d6816001815181106102c957fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166338ed1739662386f26fc10000600a8430426040518663ffffffff1660e01b815260040180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828103825285818151815260200191508051906020019060200280838360005b838110156103e35780820151818401526020810190506103c8565b505050509050019650505050505050600060405180830381600087803b15801561040c57600080fd5b505af1158015610420573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561044a57600080fd5b810190808051604051939291908464010000000082111561046a57600080fd5b8382019150602082018581111561048057600080fd5b825186602082028301116401000000008211171561049d57600080fd5b8083526020830192505050908051906020019060200280838360005b838110156104d45780820151818401526020810190506104b9565b505050509050016040525050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220c478aed5ae897e20ca99259cd7ddf2064891ec68a50362316091b9bd999ff4b364736f6c63430006020033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806332565029146100465780633f8dd44514610090578063a8863f831461009a575b600080fd5b61004e6100e4565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610098610109565b005b6100a26104e5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663095ea7b36000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16662386f26fc100006040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b505050506040513d602081101561020457600080fd5b810190808051906020019092919050505050606060026040519080825280602002602001820160405280156102485781602001602082028038833980820191505090505b509050732b1a884dc7a8f0cc17939928895d9d7cb91460748160008151811061026d57fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff168152505073b4fbf271143f4fbf7b91a5ded31805e42b2208d6816001815181106102c957fe5b602002602001019073ffffffffffffffffffffffffffffffffffffffff16908173ffffffffffffffffffffffffffffffffffffffff16815250506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166338ed1739662386f26fc10000600a8430426040518663ffffffff1660e01b815260040180868152602001858152602001806020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828103825285818151815260200191508051906020019060200280838360005b838110156103e35780820151818401526020810190506103c8565b505050509050019650505050505050600060405180830381600087803b15801561040c57600080fd5b505af1158015610420573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561044a57600080fd5b810190808051604051939291908464010000000082111561046a57600080fd5b8382019150602082018581111561048057600080fd5b825186602082028301116401000000008211171561049d57600080fd5b8083526020830192505050908051906020019060200280838360005b838110156104d45780820151818401526020810190506104b9565b505050509050016040525050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220c478aed5ae897e20ca99259cd7ddf2064891ec68a50362316091b9bd999ff4b364736f6c63430006020033",
+  "sourceMap": "191:1124:7:-:0;;;651:189;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;651:189:7;;;;;;;;;;;;;;;;;;;;;;;;;777:8;767:7;;:18;;;;;;;;;;;;;;;;;;816:16;796:17;;:36;;;;;;;;;;;;;;;;;;651:189;;191:1124;;;;;;",
+  "deployedSourceMap": "191:1124:7:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;191:1124:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;570:43;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;848:464;;;:::i;:::-;;620:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;570:43;;;;;;;;;;;;;:::o;848:464::-;900:7;;;;;;;;;;;:15;;;924:17;;;;;;;;;;;944:10;900:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;900:55:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;900:55:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;900:55:7;;;;;;;;;;;;;;;;;968:21;1021:1;1007:16;;;;;;;;;;;;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;1007:16:7;;;;1000:23;;1044:42;1034:4;1039:1;1034:7;;;;;;;;;;;;;:52;;;;;;;;;;;351:42;1097:4;1102:1;1097:7;;;;;;;;;;;;;:14;;;;;;;;;;;1124:17;;;;;;;;;;;:42;;;1181:10;1207:6;1229:4;1257;1278:15;1124:180;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1124:180:7;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1124:180:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1124:180:7;;;;;;39:16:-1;36:1;17:17;2:54;1124:180:7;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;13:2;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1124:180:7;;;;;;;;;;;;;19:11:-1;14:3;11:20;8:2;;;44:1;41;34:12;8:2;71:11;66:3;62:21;55:28;;123:4;118:3;114:14;159:9;141:16;138:31;135:2;;;182:1;179;172:12;135:2;219:3;213:10;331:9;325:2;311:12;307:21;289:16;285:44;282:59;261:11;247:12;244:29;233:116;230:2;;;362:1;359;352:12;230:2;385:12;380:3;373:25;421:4;416:3;412:14;405:21;;0:433;;1124:180:7;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1124:180:7;;;;;;;;;;;;848:464;:::o;620:22::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.6.2;\r\nimport \"./utils/IUniswapV2Factory.sol\";\r\nimport \"./utils/IUniswapV2Router.sol\";\r\nimport \"./MyERC20.sol\";\r\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\r\n\r\ncontract ExerciceSolution{\r\n\r\n    address private constant UNISWAP_V2_ROUTER = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;\r\n    address private constant WETH = 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6;\r\n    // address private constant MYERC20 = 0xaD7b3dC82BBf823BD90Ab8A0A6C6e2cD566AcBe3;\r\n    address private constant PAIR = 0xCeD6525a19818992606D8B9003EB2fC538f0A64C;\r\n\r\n    IUniswapV2Router01 public uniswap_v2_router;\r\n    MYERC20 public myerc20;\r\n\r\n    constructor(MYERC20 _myERC20, IUniswapV2Router01 _uniswapV2Router)\r\n        public\r\n        payable\r\n    {\r\n        myerc20 = _myERC20;\r\n        uniswap_v2_router = _uniswapV2Router;\r\n    }\r\n\r\n    function swapYourTokensForETH() external {\r\n        myerc20.approve(address(uniswap_v2_router), 0.01 ether);\r\n\r\n        address[] memory path;\r\n        path = new address[](2);\r\n        path[0] = 0x2B1a884Dc7a8f0cc17939928895D9D7cb9146074;\r\n        path[1] = WETH;\r\n\r\n        uniswap_v2_router.swapExactTokensForTokens(\r\n            0.01 ether, \r\n            10 wei, \r\n            path, \r\n            address(this), \r\n            block.timestamp\r\n        );\r\n    }\r\n}",
   "sourcePath": "C:\\Users\\Lucas Kaczmarski\\OneDrive - De Vinci\\Documents\\Esilv\\A4-S8\\Decentralized Finance\\TD2 - AMM-101\\amm-101\\contracts\\ExerciceSolution.sol",
   "ast": {
     "absolutePath": "project:/contracts/ExerciceSolution.sol",
     "exportedSymbols": {
       "ExerciceSolution": [
-        2476
+        2492
       ]
     },
-    "id": 2477,
+    "id": 2493,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -70,8 +84,8 @@
         "file": "./utils/IUniswapV2Factory.sol",
         "id": 2405,
         "nodeType": "ImportDirective",
-        "scope": 2477,
-        "sourceUnit": 2694,
+        "scope": 2493,
+        "sourceUnit": 2710,
         "src": "26:39:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -81,8 +95,8 @@
         "file": "./utils/IUniswapV2Router.sol",
         "id": 2406,
         "nodeType": "ImportDirective",
-        "scope": 2477,
-        "sourceUnit": 3244,
+        "scope": 2493,
+        "sourceUnit": 3260,
         "src": "67:38:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -92,8 +106,8 @@
         "file": "./MyERC20.sol",
         "id": 2407,
         "nodeType": "ImportDirective",
-        "scope": 2477,
-        "sourceUnit": 2631,
+        "scope": 2493,
+        "sourceUnit": 2647,
         "src": "107:23:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -103,7 +117,7 @@
         "file": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         "id": 2408,
         "nodeType": "ImportDirective",
-        "scope": 2477,
+        "scope": 2493,
         "sourceUnit": 825,
         "src": "132:55:7",
         "symbolAliases": [],
@@ -116,9 +130,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2476,
+        "id": 2492,
         "linearizedBaseContracts": [
-          2476
+          2492
         ],
         "name": "ExerciceSolution",
         "nodeType": "ContractDefinition",
@@ -129,7 +143,7 @@
             "name": "UNISWAP_V2_ROUTER",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 2476,
+            "scope": 2492,
             "src": "225:87:7",
             "stateVariable": true,
             "storageLocation": "default",
@@ -174,7 +188,7 @@
             "name": "WETH",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 2476,
+            "scope": 2492,
             "src": "319:74:7",
             "stateVariable": true,
             "storageLocation": "default",
@@ -219,7 +233,7 @@
             "name": "PAIR",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 2476,
+            "scope": 2492,
             "src": "487:74:7",
             "stateVariable": true,
             "storageLocation": "default",
@@ -265,12 +279,12 @@
             "name": "uniswap_v2_router",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 2476,
+            "scope": 2492,
             "src": "570:43:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IUniswapV2Router01_$3243",
+              "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
               "typeString": "contract IUniswapV2Router01"
             },
             "typeName": {
@@ -278,10 +292,10 @@
               "id": 2418,
               "name": "IUniswapV2Router01",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3243,
+              "referencedDeclaration": 3259,
               "src": "570:18:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IUniswapV2Router01_$3243",
+                "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
                 "typeString": "contract IUniswapV2Router01"
               }
             },
@@ -295,12 +309,12 @@
             "name": "myerc20",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 2476,
+            "scope": 2492,
             "src": "620:22:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_MYERC20_$2630",
+              "typeIdentifier": "t_contract$_MYERC20_$2646",
               "typeString": "contract MYERC20"
             },
             "typeName": {
@@ -308,10 +322,10 @@
               "id": 2420,
               "name": "MYERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2630,
+              "referencedDeclaration": 2646,
               "src": "620:7:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MYERC20_$2630",
+                "typeIdentifier": "t_contract$_MYERC20_$2646",
                 "typeString": "contract MYERC20"
               }
             },
@@ -320,9 +334,194 @@
           },
           {
             "body": {
-              "id": 2474,
+              "id": 2436,
               "nodeType": "Block",
-              "src": "1446:423:7",
+              "src": "756:84:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2430,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 2428,
+                      "name": "myerc20",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2421,
+                      "src": "767:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MYERC20_$2646",
+                        "typeString": "contract MYERC20"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 2429,
+                      "name": "_myERC20",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2423,
+                      "src": "777:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MYERC20_$2646",
+                        "typeString": "contract MYERC20"
+                      }
+                    },
+                    "src": "767:18:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MYERC20_$2646",
+                      "typeString": "contract MYERC20"
+                    }
+                  },
+                  "id": 2431,
+                  "nodeType": "ExpressionStatement",
+                  "src": "767:18:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2434,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 2432,
+                      "name": "uniswap_v2_router",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2419,
+                      "src": "796:17:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
+                        "typeString": "contract IUniswapV2Router01"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 2433,
+                      "name": "_uniswapV2Router",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2425,
+                      "src": "816:16:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
+                        "typeString": "contract IUniswapV2Router01"
+                      }
+                    },
+                    "src": "796:36:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
+                      "typeString": "contract IUniswapV2Router01"
+                    }
+                  },
+                  "id": 2435,
+                  "nodeType": "ExpressionStatement",
+                  "src": "796:36:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2437,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 2426,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2423,
+                  "name": "_myERC20",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2437,
+                  "src": "663:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_MYERC20_$2646",
+                    "typeString": "contract MYERC20"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2422,
+                    "name": "MYERC20",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 2646,
+                    "src": "663:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MYERC20_$2646",
+                      "typeString": "contract MYERC20"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2425,
+                  "name": "_uniswapV2Router",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 2437,
+                  "src": "681:35:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
+                    "typeString": "contract IUniswapV2Router01"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 2424,
+                    "name": "IUniswapV2Router01",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 3259,
+                    "src": "681:18:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
+                      "typeString": "contract IUniswapV2Router01"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "662:55:7"
+            },
+            "returnParameters": {
+              "id": 2427,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "756:0:7"
+            },
+            "scope": 2492,
+            "src": "651:189:7",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 2490,
+              "nodeType": "Block",
+              "src": "889:423:7",
               "statements": [
                 {
                   "expression": {
@@ -333,14 +532,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 2429,
+                            "id": 2445,
                             "name": "uniswap_v2_router",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 2419,
-                            "src": "1481:17:7",
+                            "src": "924:17:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IUniswapV2Router01_$3243",
+                              "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
                               "typeString": "contract IUniswapV2Router01"
                             }
                           }
@@ -348,33 +547,33 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IUniswapV2Router01_$3243",
+                              "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
                               "typeString": "contract IUniswapV2Router01"
                             }
                           ],
-                          "id": 2428,
+                          "id": 2444,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "1473:7:7",
+                          "src": "916:7:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 2427,
+                            "id": 2443,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "1473:7:7",
+                            "src": "916:7:7",
                             "typeDescriptions": {
                               "typeIdentifier": null,
                               "typeString": null
                             }
                           }
                         },
-                        "id": 2430,
+                        "id": 2446,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -382,7 +581,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1473:26:7",
+                        "src": "916:26:7",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -392,14 +591,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "302e3031",
-                        "id": 2431,
+                        "id": 2447,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1501:10:7",
+                        "src": "944:10:7",
                         "subdenomination": "ether",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10000000000000000_by_1",
@@ -421,18 +620,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2424,
+                        "id": 2440,
                         "name": "myerc20",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2421,
-                        "src": "1457:7:7",
+                        "src": "900:7:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_MYERC20_$2630",
+                          "typeIdentifier": "t_contract$_MYERC20_$2646",
                           "typeString": "contract MYERC20"
                         }
                       },
-                      "id": 2426,
+                      "id": 2442,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -440,13 +639,13 @@
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 493,
-                      "src": "1457:15:7",
+                      "src": "900:15:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 2432,
+                    "id": 2448,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -454,30 +653,30 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1457:55:7",
+                    "src": "900:55:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 2433,
+                  "id": 2449,
                   "nodeType": "ExpressionStatement",
-                  "src": "1457:55:7"
+                  "src": "900:55:7"
                 },
                 {
                   "assignments": [
-                    2438
+                    2454
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 2438,
+                      "id": 2454,
                       "name": "path",
                       "nodeType": "VariableDeclaration",
                       "overrides": null,
-                      "scope": 2474,
-                      "src": "1525:21:7",
+                      "scope": 2490,
+                      "src": "968:21:7",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
@@ -486,19 +685,19 @@
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 2436,
+                          "id": 2452,
                           "name": "address",
                           "nodeType": "ElementaryTypeName",
-                          "src": "1525:7:7",
+                          "src": "968:7:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "id": 2437,
+                        "id": 2453,
                         "length": null,
                         "nodeType": "ArrayTypeName",
-                        "src": "1525:9:7",
+                        "src": "968:9:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                           "typeString": "address[]"
@@ -508,27 +707,27 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 2439,
+                  "id": 2455,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1525:21:7"
+                  "src": "968:21:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2446,
+                    "id": 2462,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 2440,
+                      "id": 2456,
                       "name": "path",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2438,
-                      "src": "1557:4:7",
+                      "referencedDeclaration": 2454,
+                      "src": "1000:4:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                         "typeString": "address[] memory"
@@ -542,14 +741,14 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "32",
-                          "id": 2444,
+                          "id": 2460,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1578:1:7",
+                          "src": "1021:1:7",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_2_by_1",
@@ -565,40 +764,40 @@
                             "typeString": "int_const 2"
                           }
                         ],
-                        "id": 2443,
+                        "id": 2459,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
                         "nodeType": "NewExpression",
-                        "src": "1564:13:7",
+                        "src": "1007:13:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_address_$dyn_memory_$",
                           "typeString": "function (uint256) pure returns (address[] memory)"
                         },
                         "typeName": {
                           "baseType": {
-                            "id": 2441,
+                            "id": 2457,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "1568:7:7",
+                            "src": "1011:7:7",
                             "stateMutability": "nonpayable",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
                             }
                           },
-                          "id": 2442,
+                          "id": 2458,
                           "length": null,
                           "nodeType": "ArrayTypeName",
-                          "src": "1568:9:7",
+                          "src": "1011:9:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                             "typeString": "address[]"
                           }
                         }
                       },
-                      "id": 2445,
+                      "id": 2461,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -606,27 +805,27 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "1564:16:7",
+                      "src": "1007:16:7",
                       "tryCall": false,
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_memory",
                         "typeString": "address[] memory"
                       }
                     },
-                    "src": "1557:23:7",
+                    "src": "1000:23:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                       "typeString": "address[] memory"
                     }
                   },
-                  "id": 2447,
+                  "id": 2463,
                   "nodeType": "ExpressionStatement",
-                  "src": "1557:23:7"
+                  "src": "1000:23:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2452,
+                    "id": 2468,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -635,29 +834,29 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 2448,
+                        "id": 2464,
                         "name": "path",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2438,
-                        "src": "1591:4:7",
+                        "referencedDeclaration": 2454,
+                        "src": "1034:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                           "typeString": "address[] memory"
                         }
                       },
-                      "id": 2450,
+                      "id": 2466,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "30",
-                        "id": 2449,
+                        "id": 2465,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1596:1:7",
+                        "src": "1039:1:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
@@ -670,7 +869,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1591:7:7",
+                      "src": "1034:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -681,14 +880,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "307832423161383834446337613866306363313739333939323838393544394437636239313436303734",
-                      "id": 2451,
+                      "id": 2467,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1601:42:7",
+                      "src": "1044:42:7",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
@@ -696,20 +895,20 @@
                       },
                       "value": "0x2B1a884Dc7a8f0cc17939928895D9D7cb9146074"
                     },
-                    "src": "1591:52:7",
+                    "src": "1034:52:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 2453,
+                  "id": 2469,
                   "nodeType": "ExpressionStatement",
-                  "src": "1591:52:7"
+                  "src": "1034:52:7"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2458,
+                    "id": 2474,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -718,29 +917,29 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 2454,
+                        "id": 2470,
                         "name": "path",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2438,
-                        "src": "1654:4:7",
+                        "referencedDeclaration": 2454,
+                        "src": "1097:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                           "typeString": "address[] memory"
                         }
                       },
-                      "id": 2456,
+                      "id": 2472,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "31",
-                        "id": 2455,
+                        "id": 2471,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1659:1:7",
+                        "src": "1102:1:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_1_by_1",
@@ -753,7 +952,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "1654:7:7",
+                      "src": "1097:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -763,26 +962,26 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 2457,
+                      "id": 2473,
                       "name": "WETH",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 2414,
-                      "src": "1664:4:7",
+                      "src": "1107:4:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "1654:14:7",
+                    "src": "1097:14:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 2459,
+                  "id": 2475,
                   "nodeType": "ExpressionStatement",
-                  "src": "1654:14:7"
+                  "src": "1097:14:7"
                 },
                 {
                   "expression": {
@@ -791,14 +990,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "302e3031",
-                        "id": 2463,
+                        "id": 2479,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1738:10:7",
+                        "src": "1181:10:7",
                         "subdenomination": "ether",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10000000000000000_by_1",
@@ -809,14 +1008,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "3130",
-                        "id": 2464,
+                        "id": 2480,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1764:6:7",
+                        "src": "1207:6:7",
                         "subdenomination": "wei",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10_by_1",
@@ -826,12 +1025,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 2465,
+                        "id": 2481,
                         "name": "path",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2438,
-                        "src": "1786:4:7",
+                        "referencedDeclaration": 2454,
+                        "src": "1229:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                           "typeString": "address[] memory"
@@ -842,14 +1041,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 2468,
+                            "id": 2484,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -28,
-                            "src": "1814:4:7",
+                            "src": "1257:4:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ExerciceSolution_$2476",
+                              "typeIdentifier": "t_contract$_ExerciceSolution_$2492",
                               "typeString": "contract ExerciceSolution"
                             }
                           }
@@ -857,33 +1056,33 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_ExerciceSolution_$2476",
+                              "typeIdentifier": "t_contract$_ExerciceSolution_$2492",
                               "typeString": "contract ExerciceSolution"
                             }
                           ],
-                          "id": 2467,
+                          "id": 2483,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "1806:7:7",
+                          "src": "1249:7:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_$",
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 2466,
+                            "id": 2482,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "1806:7:7",
+                            "src": "1249:7:7",
                             "typeDescriptions": {
                               "typeIdentifier": null,
                               "typeString": null
                             }
                           }
                         },
-                        "id": 2469,
+                        "id": 2485,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -891,7 +1090,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1806:13:7",
+                        "src": "1249:13:7",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -902,18 +1101,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2470,
+                          "id": 2486,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": -4,
-                          "src": "1835:5:7",
+                          "src": "1278:5:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 2471,
+                        "id": 2487,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -921,7 +1120,7 @@
                         "memberName": "timestamp",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1835:15:7",
+                        "src": "1278:15:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -953,32 +1152,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2460,
+                        "id": 2476,
                         "name": "uniswap_v2_router",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2419,
-                        "src": "1681:17:7",
+                        "src": "1124:17:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IUniswapV2Router01_$3243",
+                          "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
                           "typeString": "contract IUniswapV2Router01"
                         }
                       },
-                      "id": 2462,
+                      "id": 2478,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "swapExactTokensForTokens",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3106,
-                      "src": "1681:42:7",
+                      "referencedDeclaration": 3122,
+                      "src": "1124:42:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_array$_t_address_$dyn_memory_ptr_$_t_address_$_t_uint256_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
                         "typeString": "function (uint256,uint256,address[] memory,address,uint256) external returns (uint256[] memory)"
                       }
                     },
-                    "id": 2472,
+                    "id": 2488,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -986,22 +1185,22 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1681:180:7",
+                    "src": "1124:180:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
                       "typeString": "uint256[] memory"
                     }
                   },
-                  "id": 2473,
+                  "id": 2489,
                   "nodeType": "ExpressionStatement",
-                  "src": "1681:180:7"
+                  "src": "1124:180:7"
                 }
               ]
             },
             "documentation": null,
             "functionSelector": "3f8dd445",
-            "id": 2475,
+            "id": 2491,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1009,36 +1208,36 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2422,
+              "id": 2438,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1434:2:7"
+              "src": "877:2:7"
             },
             "returnParameters": {
-              "id": 2423,
+              "id": 2439,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1446:0:7"
+              "src": "889:0:7"
             },
-            "scope": 2476,
-            "src": "1405:464:7",
+            "scope": 2492,
+            "src": "848:464:7",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2477,
-        "src": "191:1681:7"
+        "scope": 2493,
+        "src": "191:1124:7"
       }
     ],
-    "src": "0:1872:7"
+    "src": "0:1315:7"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/ExerciceSolution.sol",
       "exportedSymbols": {
         "ExerciceSolution": [
-          2476
+          2492
         ]
       }
     },
@@ -1058,10 +1257,10 @@
       },
       {
         "attributes": {
-          "SourceUnit": 2694,
+          "SourceUnit": 2710,
           "absolutePath": "project:/contracts/utils/IUniswapV2Factory.sol",
           "file": "./utils/IUniswapV2Factory.sol",
-          "scope": 2477,
+          "scope": 2493,
           "symbolAliases": [
             null
           ],
@@ -1073,10 +1272,10 @@
       },
       {
         "attributes": {
-          "SourceUnit": 3244,
+          "SourceUnit": 3260,
           "absolutePath": "project:/contracts/utils/IUniswapV2Router.sol",
           "file": "./utils/IUniswapV2Router.sol",
-          "scope": 2477,
+          "scope": 2493,
           "symbolAliases": [
             null
           ],
@@ -1088,10 +1287,10 @@
       },
       {
         "attributes": {
-          "SourceUnit": 2631,
+          "SourceUnit": 2647,
           "absolutePath": "project:/contracts/MyERC20.sol",
           "file": "./MyERC20.sol",
-          "scope": 2477,
+          "scope": 2493,
           "symbolAliases": [
             null
           ],
@@ -1106,7 +1305,7 @@
           "SourceUnit": 825,
           "absolutePath": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
           "file": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-          "scope": 2477,
+          "scope": 2493,
           "symbolAliases": [
             null
           ],
@@ -1129,10 +1328,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            2476
+            2492
           ],
           "name": "ExerciceSolution",
-          "scope": 2477
+          "scope": 2493
         },
         "children": [
           {
@@ -1140,7 +1339,7 @@
               "constant": true,
               "name": "UNISWAP_V2_ROUTER",
               "overrides": null,
-              "scope": 2476,
+              "scope": 2492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -1184,7 +1383,7 @@
               "constant": true,
               "name": "WETH",
               "overrides": null,
-              "scope": 2476,
+              "scope": 2492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -1228,7 +1427,7 @@
               "constant": true,
               "name": "PAIR",
               "overrides": null,
-              "scope": 2476,
+              "scope": 2492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -1273,7 +1472,7 @@
               "functionSelector": "32565029",
               "name": "uniswap_v2_router",
               "overrides": null,
-              "scope": 2476,
+              "scope": 2492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract IUniswapV2Router01",
@@ -1285,7 +1484,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "IUniswapV2Router01",
-                  "referencedDeclaration": 3243,
+                  "referencedDeclaration": 3259,
                   "type": "contract IUniswapV2Router01"
                 },
                 "id": 2418,
@@ -1303,7 +1502,7 @@
               "functionSelector": "a8863f83",
               "name": "myerc20",
               "overrides": null,
-              "scope": 2476,
+              "scope": 2492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract MYERC20",
@@ -1315,7 +1514,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "MYERC20",
-                  "referencedDeclaration": 2630,
+                  "referencedDeclaration": 2646,
                   "type": "contract MYERC20"
                 },
                 "id": 2420,
@@ -1330,6 +1529,213 @@
           {
             "attributes": {
               "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 2492,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_myERC20",
+                      "overrides": null,
+                      "scope": 2437,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract MYERC20",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "MYERC20",
+                          "referencedDeclaration": 2646,
+                          "type": "contract MYERC20"
+                        },
+                        "id": 2422,
+                        "name": "UserDefinedTypeName",
+                        "src": "663:7:7"
+                      }
+                    ],
+                    "id": 2423,
+                    "name": "VariableDeclaration",
+                    "src": "663:16:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_uniswapV2Router",
+                      "overrides": null,
+                      "scope": 2437,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract IUniswapV2Router01",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "IUniswapV2Router01",
+                          "referencedDeclaration": 3259,
+                          "type": "contract IUniswapV2Router01"
+                        },
+                        "id": 2424,
+                        "name": "UserDefinedTypeName",
+                        "src": "681:18:7"
+                      }
+                    ],
+                    "id": 2425,
+                    "name": "VariableDeclaration",
+                    "src": "681:35:7"
+                  }
+                ],
+                "id": 2426,
+                "name": "ParameterList",
+                "src": "662:55:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2427,
+                "name": "ParameterList",
+                "src": "756:0:7"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract MYERC20"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2421,
+                              "type": "contract MYERC20",
+                              "value": "myerc20"
+                            },
+                            "id": 2428,
+                            "name": "Identifier",
+                            "src": "767:7:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2423,
+                              "type": "contract MYERC20",
+                              "value": "_myERC20"
+                            },
+                            "id": 2429,
+                            "name": "Identifier",
+                            "src": "777:8:7"
+                          }
+                        ],
+                        "id": 2430,
+                        "name": "Assignment",
+                        "src": "767:18:7"
+                      }
+                    ],
+                    "id": 2431,
+                    "name": "ExpressionStatement",
+                    "src": "767:18:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract IUniswapV2Router01"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2419,
+                              "type": "contract IUniswapV2Router01",
+                              "value": "uniswap_v2_router"
+                            },
+                            "id": 2432,
+                            "name": "Identifier",
+                            "src": "796:17:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2425,
+                              "type": "contract IUniswapV2Router01",
+                              "value": "_uniswapV2Router"
+                            },
+                            "id": 2433,
+                            "name": "Identifier",
+                            "src": "816:16:7"
+                          }
+                        ],
+                        "id": 2434,
+                        "name": "Assignment",
+                        "src": "796:36:7"
+                      }
+                    ],
+                    "id": 2435,
+                    "name": "ExpressionStatement",
+                    "src": "796:36:7"
+                  }
+                ],
+                "id": 2436,
+                "name": "Block",
+                "src": "756:84:7"
+              }
+            ],
+            "id": 2437,
+            "name": "FunctionDefinition",
+            "src": "651:189:7"
+          },
+          {
+            "attributes": {
+              "documentation": null,
               "functionSelector": "3f8dd445",
               "implemented": true,
               "isConstructor": false,
@@ -1339,7 +1745,7 @@
               ],
               "name": "swapYourTokensForETH",
               "overrides": null,
-              "scope": 2476,
+              "scope": 2492,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -1352,9 +1758,9 @@
                   ]
                 },
                 "children": [],
-                "id": 2422,
+                "id": 2438,
                 "name": "ParameterList",
-                "src": "1434:2:7"
+                "src": "877:2:7"
               },
               {
                 "attributes": {
@@ -1363,9 +1769,9 @@
                   ]
                 },
                 "children": [],
-                "id": 2423,
+                "id": 2439,
                 "name": "ParameterList",
-                "src": "1446:0:7"
+                "src": "889:0:7"
               },
               {
                 "children": [
@@ -1418,14 +1824,14 @@
                                   "type": "contract MYERC20",
                                   "value": "myerc20"
                                 },
-                                "id": 2424,
+                                "id": 2440,
                                 "name": "Identifier",
-                                "src": "1457:7:7"
+                                "src": "900:7:7"
                               }
                             ],
-                            "id": 2426,
+                            "id": 2442,
                             "name": "MemberAccess",
-                            "src": "1457:15:7"
+                            "src": "900:15:7"
                           },
                           {
                             "attributes": {
@@ -1447,7 +1853,7 @@
                                 "attributes": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_IUniswapV2Router01_$3243",
+                                      "typeIdentifier": "t_contract$_IUniswapV2Router01_$3259",
                                       "typeString": "contract IUniswapV2Router01"
                                     }
                                   ],
@@ -1463,14 +1869,14 @@
                                       "name": "address",
                                       "type": null
                                     },
-                                    "id": 2427,
+                                    "id": 2443,
                                     "name": "ElementaryTypeName",
-                                    "src": "1473:7:7"
+                                    "src": "916:7:7"
                                   }
                                 ],
-                                "id": 2428,
+                                "id": 2444,
                                 "name": "ElementaryTypeNameExpression",
-                                "src": "1473:7:7"
+                                "src": "916:7:7"
                               },
                               {
                                 "attributes": {
@@ -1482,14 +1888,14 @@
                                   "type": "contract IUniswapV2Router01",
                                   "value": "uniswap_v2_router"
                                 },
-                                "id": 2429,
+                                "id": 2445,
                                 "name": "Identifier",
-                                "src": "1481:17:7"
+                                "src": "924:17:7"
                               }
                             ],
-                            "id": 2430,
+                            "id": 2446,
                             "name": "FunctionCall",
-                            "src": "1473:26:7"
+                            "src": "916:26:7"
                           },
                           {
                             "attributes": {
@@ -1504,24 +1910,24 @@
                               "type": "int_const 10000000000000000",
                               "value": "0.01"
                             },
-                            "id": 2431,
+                            "id": 2447,
                             "name": "Literal",
-                            "src": "1501:10:7"
+                            "src": "944:10:7"
                           }
                         ],
-                        "id": 2432,
+                        "id": 2448,
                         "name": "FunctionCall",
-                        "src": "1457:55:7"
+                        "src": "900:55:7"
                       }
                     ],
-                    "id": 2433,
+                    "id": 2449,
                     "name": "ExpressionStatement",
-                    "src": "1457:55:7"
+                    "src": "900:55:7"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        2438
+                        2454
                       ],
                       "initialValue": null
                     },
@@ -1531,7 +1937,7 @@
                           "constant": false,
                           "name": "path",
                           "overrides": null,
-                          "scope": 2474,
+                          "scope": 2490,
                           "stateVariable": false,
                           "storageLocation": "memory",
                           "type": "address[]",
@@ -1550,24 +1956,24 @@
                                   "name": "address",
                                   "type": "address"
                                 },
-                                "id": 2436,
+                                "id": 2452,
                                 "name": "ElementaryTypeName",
-                                "src": "1525:7:7"
+                                "src": "968:7:7"
                               }
                             ],
-                            "id": 2437,
+                            "id": 2453,
                             "name": "ArrayTypeName",
-                            "src": "1525:9:7"
+                            "src": "968:9:7"
                           }
                         ],
-                        "id": 2438,
+                        "id": 2454,
                         "name": "VariableDeclaration",
-                        "src": "1525:21:7"
+                        "src": "968:21:7"
                       }
                     ],
-                    "id": 2439,
+                    "id": 2455,
                     "name": "VariableDeclarationStatement",
-                    "src": "1525:21:7"
+                    "src": "968:21:7"
                   },
                   {
                     "children": [
@@ -1588,13 +1994,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2438,
+                              "referencedDeclaration": 2454,
                               "type": "address[] memory",
                               "value": "path"
                             },
-                            "id": 2440,
+                            "id": 2456,
                             "name": "Identifier",
-                            "src": "1557:4:7"
+                            "src": "1000:4:7"
                           },
                           {
                             "attributes": {
@@ -1639,19 +2045,19 @@
                                           "stateMutability": "nonpayable",
                                           "type": "address"
                                         },
-                                        "id": 2441,
+                                        "id": 2457,
                                         "name": "ElementaryTypeName",
-                                        "src": "1568:7:7"
+                                        "src": "1011:7:7"
                                       }
                                     ],
-                                    "id": 2442,
+                                    "id": 2458,
                                     "name": "ArrayTypeName",
-                                    "src": "1568:9:7"
+                                    "src": "1011:9:7"
                                   }
                                 ],
-                                "id": 2443,
+                                "id": 2459,
                                 "name": "NewExpression",
-                                "src": "1564:13:7"
+                                "src": "1007:13:7"
                               },
                               {
                                 "attributes": {
@@ -1666,24 +2072,24 @@
                                   "type": "int_const 2",
                                   "value": "2"
                                 },
-                                "id": 2444,
+                                "id": 2460,
                                 "name": "Literal",
-                                "src": "1578:1:7"
+                                "src": "1021:1:7"
                               }
                             ],
-                            "id": 2445,
+                            "id": 2461,
                             "name": "FunctionCall",
-                            "src": "1564:16:7"
+                            "src": "1007:16:7"
                           }
                         ],
-                        "id": 2446,
+                        "id": 2462,
                         "name": "Assignment",
-                        "src": "1557:23:7"
+                        "src": "1000:23:7"
                       }
                     ],
-                    "id": 2447,
+                    "id": 2463,
                     "name": "ExpressionStatement",
-                    "src": "1557:23:7"
+                    "src": "1000:23:7"
                   },
                   {
                     "children": [
@@ -1714,13 +2120,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2438,
+                                  "referencedDeclaration": 2454,
                                   "type": "address[] memory",
                                   "value": "path"
                                 },
-                                "id": 2448,
+                                "id": 2464,
                                 "name": "Identifier",
-                                "src": "1591:4:7"
+                                "src": "1034:4:7"
                               },
                               {
                                 "attributes": {
@@ -1735,14 +2141,14 @@
                                   "type": "int_const 0",
                                   "value": "0"
                                 },
-                                "id": 2449,
+                                "id": 2465,
                                 "name": "Literal",
-                                "src": "1596:1:7"
+                                "src": "1039:1:7"
                               }
                             ],
-                            "id": 2450,
+                            "id": 2466,
                             "name": "IndexAccess",
-                            "src": "1591:7:7"
+                            "src": "1034:7:7"
                           },
                           {
                             "attributes": {
@@ -1757,19 +2163,19 @@
                               "type": "address payable",
                               "value": "0x2B1a884Dc7a8f0cc17939928895D9D7cb9146074"
                             },
-                            "id": 2451,
+                            "id": 2467,
                             "name": "Literal",
-                            "src": "1601:42:7"
+                            "src": "1044:42:7"
                           }
                         ],
-                        "id": 2452,
+                        "id": 2468,
                         "name": "Assignment",
-                        "src": "1591:52:7"
+                        "src": "1034:52:7"
                       }
                     ],
-                    "id": 2453,
+                    "id": 2469,
                     "name": "ExpressionStatement",
-                    "src": "1591:52:7"
+                    "src": "1034:52:7"
                   },
                   {
                     "children": [
@@ -1800,13 +2206,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2438,
+                                  "referencedDeclaration": 2454,
                                   "type": "address[] memory",
                                   "value": "path"
                                 },
-                                "id": 2454,
+                                "id": 2470,
                                 "name": "Identifier",
-                                "src": "1654:4:7"
+                                "src": "1097:4:7"
                               },
                               {
                                 "attributes": {
@@ -1821,14 +2227,14 @@
                                   "type": "int_const 1",
                                   "value": "1"
                                 },
-                                "id": 2455,
+                                "id": 2471,
                                 "name": "Literal",
-                                "src": "1659:1:7"
+                                "src": "1102:1:7"
                               }
                             ],
-                            "id": 2456,
+                            "id": 2472,
                             "name": "IndexAccess",
-                            "src": "1654:7:7"
+                            "src": "1097:7:7"
                           },
                           {
                             "attributes": {
@@ -1840,19 +2246,19 @@
                               "type": "address",
                               "value": "WETH"
                             },
-                            "id": 2457,
+                            "id": 2473,
                             "name": "Identifier",
-                            "src": "1664:4:7"
+                            "src": "1107:4:7"
                           }
                         ],
-                        "id": 2458,
+                        "id": 2474,
                         "name": "Assignment",
-                        "src": "1654:14:7"
+                        "src": "1097:14:7"
                       }
                     ],
-                    "id": 2459,
+                    "id": 2475,
                     "name": "ExpressionStatement",
-                    "src": "1654:14:7"
+                    "src": "1097:14:7"
                   },
                   {
                     "children": [
@@ -1901,7 +2307,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "swapExactTokensForTokens",
-                              "referencedDeclaration": 3106,
+                              "referencedDeclaration": 3122,
                               "type": "function (uint256,uint256,address[] memory,address,uint256) external returns (uint256[] memory)"
                             },
                             "children": [
@@ -1915,14 +2321,14 @@
                                   "type": "contract IUniswapV2Router01",
                                   "value": "uniswap_v2_router"
                                 },
-                                "id": 2460,
+                                "id": 2476,
                                 "name": "Identifier",
-                                "src": "1681:17:7"
+                                "src": "1124:17:7"
                               }
                             ],
-                            "id": 2462,
+                            "id": 2478,
                             "name": "MemberAccess",
-                            "src": "1681:42:7"
+                            "src": "1124:42:7"
                           },
                           {
                             "attributes": {
@@ -1937,9 +2343,9 @@
                               "type": "int_const 10000000000000000",
                               "value": "0.01"
                             },
-                            "id": 2463,
+                            "id": 2479,
                             "name": "Literal",
-                            "src": "1738:10:7"
+                            "src": "1181:10:7"
                           },
                           {
                             "attributes": {
@@ -1954,9 +2360,9 @@
                               "type": "int_const 10",
                               "value": "10"
                             },
-                            "id": 2464,
+                            "id": 2480,
                             "name": "Literal",
-                            "src": "1764:6:7"
+                            "src": "1207:6:7"
                           },
                           {
                             "attributes": {
@@ -1964,13 +2370,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2438,
+                              "referencedDeclaration": 2454,
                               "type": "address[] memory",
                               "value": "path"
                             },
-                            "id": 2465,
+                            "id": 2481,
                             "name": "Identifier",
-                            "src": "1786:4:7"
+                            "src": "1229:4:7"
                           },
                           {
                             "attributes": {
@@ -1992,7 +2398,7 @@
                                 "attributes": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_ExerciceSolution_$2476",
+                                      "typeIdentifier": "t_contract$_ExerciceSolution_$2492",
                                       "typeString": "contract ExerciceSolution"
                                     }
                                   ],
@@ -2008,14 +2414,14 @@
                                       "name": "address",
                                       "type": null
                                     },
-                                    "id": 2466,
+                                    "id": 2482,
                                     "name": "ElementaryTypeName",
-                                    "src": "1806:7:7"
+                                    "src": "1249:7:7"
                                   }
                                 ],
-                                "id": 2467,
+                                "id": 2483,
                                 "name": "ElementaryTypeNameExpression",
-                                "src": "1806:7:7"
+                                "src": "1249:7:7"
                               },
                               {
                                 "attributes": {
@@ -2027,14 +2433,14 @@
                                   "type": "contract ExerciceSolution",
                                   "value": "this"
                                 },
-                                "id": 2468,
+                                "id": 2484,
                                 "name": "Identifier",
-                                "src": "1814:4:7"
+                                "src": "1257:4:7"
                               }
                             ],
-                            "id": 2469,
+                            "id": 2485,
                             "name": "FunctionCall",
-                            "src": "1806:13:7"
+                            "src": "1249:13:7"
                           },
                           {
                             "attributes": {
@@ -2058,44 +2464,44 @@
                                   "type": "block",
                                   "value": "block"
                                 },
-                                "id": 2470,
+                                "id": 2486,
                                 "name": "Identifier",
-                                "src": "1835:5:7"
+                                "src": "1278:5:7"
                               }
                             ],
-                            "id": 2471,
+                            "id": 2487,
                             "name": "MemberAccess",
-                            "src": "1835:15:7"
+                            "src": "1278:15:7"
                           }
                         ],
-                        "id": 2472,
+                        "id": 2488,
                         "name": "FunctionCall",
-                        "src": "1681:180:7"
+                        "src": "1124:180:7"
                       }
                     ],
-                    "id": 2473,
+                    "id": 2489,
                     "name": "ExpressionStatement",
-                    "src": "1681:180:7"
+                    "src": "1124:180:7"
                   }
                 ],
-                "id": 2474,
+                "id": 2490,
                 "name": "Block",
-                "src": "1446:423:7"
+                "src": "889:423:7"
               }
             ],
-            "id": 2475,
+            "id": 2491,
             "name": "FunctionDefinition",
-            "src": "1405:464:7"
+            "src": "848:464:7"
           }
         ],
-        "id": 2476,
+        "id": 2492,
         "name": "ContractDefinition",
-        "src": "191:1681:7"
+        "src": "191:1124:7"
       }
     ],
-    "id": 2477,
+    "id": 2493,
     "name": "SourceUnit",
-    "src": "0:1872:7"
+    "src": "0:1315:7"
   },
   "compiler": {
     "name": "solc",
@@ -2103,8 +2509,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-01-28T18:33:03.544Z",
-  "networkType": "ethereum",
+  "updatedAt": "2023-01-28T19:09:12.726Z",
   "devdoc": {
     "methods": {}
   },
