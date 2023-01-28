@@ -4,5 +4,9 @@
     "@supercharge/strings": "^1.29.1",
     "@truffle/hdwallet-provider": "^2.1.5",
     "truffle-plugin-verify": "^0.5.21"
+  },
+  "dependencies": {
+    "@truffle/contract": "^4.6.13",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
   }
 }

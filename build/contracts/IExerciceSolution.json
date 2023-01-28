@@ -41,14 +41,14 @@
     "absolutePath": "project:/contracts/IExerciceSolution.sol",
     "exportedSymbols": {
       "IExerciceSolution": [
-        2417
+        2560
       ]
     },
-    "id": 2418,
+    "id": 2561,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2404,
+        "id": 2547,
         "literals": [
           "solidity",
           "^",
@@ -56,7 +56,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:7"
+        "src": "0:23:9"
       },
       {
         "abstract": false,
@@ -65,9 +65,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2417,
+        "id": 2560,
         "linearizedBaseContracts": [
-          2417
+          2560
         ],
         "name": "IExerciceSolution",
         "nodeType": "ContractDefinition",
@@ -76,7 +76,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "e8078d94",
-            "id": 2407,
+            "id": 2550,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -84,19 +84,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2405,
+              "id": 2548,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "82:2:7"
+              "src": "82:2:9"
             },
             "returnParameters": {
-              "id": 2406,
+              "id": 2549,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "93:0:7"
+              "src": "93:0:9"
             },
-            "scope": 2417,
-            "src": "61:33:7",
+            "scope": 2560,
+            "src": "61:33:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -105,7 +105,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "7ea382c1",
-            "id": 2410,
+            "id": 2553,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -113,19 +113,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2408,
+              "id": 2551,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "125:2:7"
+              "src": "125:2:9"
             },
             "returnParameters": {
-              "id": 2409,
+              "id": 2552,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "136:0:7"
+              "src": "136:0:9"
             },
-            "scope": 2417,
-            "src": "99:38:7",
+            "scope": 2560,
+            "src": "99:38:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -134,7 +134,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "7c587b22",
-            "id": 2413,
+            "id": 2556,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -142,19 +142,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2411,
+              "id": 2554,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "177:2:7"
+              "src": "177:2:9"
             },
             "returnParameters": {
-              "id": 2412,
+              "id": 2555,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "188:0:7"
+              "src": "188:0:9"
             },
-            "scope": 2417,
-            "src": "142:47:7",
+            "scope": 2560,
+            "src": "142:47:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -163,7 +163,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "c4a85993",
-            "id": 2416,
+            "id": 2559,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -171,36 +171,36 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2414,
+              "id": 2557,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "222:2:7"
+              "src": "222:2:9"
             },
             "returnParameters": {
-              "id": 2415,
+              "id": 2558,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "233:0:7"
+              "src": "233:0:9"
             },
-            "scope": 2417,
-            "src": "194:40:7",
+            "scope": 2560,
+            "src": "194:40:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2418,
-        "src": "27:210:7"
+        "scope": 2561,
+        "src": "27:210:9"
       }
     ],
-    "src": "0:239:7"
+    "src": "0:239:9"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/IExerciceSolution.sol",
       "exportedSymbols": {
         "IExerciceSolution": [
-          2417
+          2560
         ]
       }
     },
@@ -214,9 +214,9 @@
             ".0"
           ]
         },
-        "id": 2404,
+        "id": 2547,
         "name": "PragmaDirective",
-        "src": "0:23:7"
+        "src": "0:23:9"
       },
       {
         "attributes": {
@@ -231,10 +231,10 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            2417
+            2560
           ],
           "name": "IExerciceSolution",
-          "scope": 2418
+          "scope": 2561
         },
         "children": [
           {
@@ -250,7 +250,7 @@
               ],
               "name": "addLiquidity",
               "overrides": null,
-              "scope": 2417,
+              "scope": 2560,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -263,9 +263,9 @@
                   ]
                 },
                 "children": [],
-                "id": 2405,
+                "id": 2548,
                 "name": "ParameterList",
-                "src": "82:2:7"
+                "src": "82:2:9"
               },
               {
                 "attributes": {
@@ -274,14 +274,14 @@
                   ]
                 },
                 "children": [],
-                "id": 2406,
+                "id": 2549,
                 "name": "ParameterList",
-                "src": "93:0:7"
+                "src": "93:0:9"
               }
             ],
-            "id": 2407,
+            "id": 2550,
             "name": "FunctionDefinition",
-            "src": "61:33:7"
+            "src": "61:33:9"
           },
           {
             "attributes": {
@@ -296,7 +296,7 @@
               ],
               "name": "withdrawLiquidity",
               "overrides": null,
-              "scope": 2417,
+              "scope": 2560,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -309,9 +309,9 @@
                   ]
                 },
                 "children": [],
-                "id": 2408,
+                "id": 2551,
                 "name": "ParameterList",
-                "src": "125:2:7"
+                "src": "125:2:9"
               },
               {
                 "attributes": {
@@ -320,14 +320,14 @@
                   ]
                 },
                 "children": [],
-                "id": 2409,
+                "id": 2552,
                 "name": "ParameterList",
-                "src": "136:0:7"
+                "src": "136:0:9"
               }
             ],
-            "id": 2410,
+            "id": 2553,
             "name": "FunctionDefinition",
-            "src": "99:38:7"
+            "src": "99:38:9"
           },
           {
             "attributes": {
@@ -342,7 +342,7 @@
               ],
               "name": "swapYourTokenForDummyToken",
               "overrides": null,
-              "scope": 2417,
+              "scope": 2560,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -355,9 +355,9 @@
                   ]
                 },
                 "children": [],
-                "id": 2411,
+                "id": 2554,
                 "name": "ParameterList",
-                "src": "177:2:7"
+                "src": "177:2:9"
               },
               {
                 "attributes": {
@@ -366,14 +366,14 @@
                   ]
                 },
                 "children": [],
-                "id": 2412,
+                "id": 2555,
                 "name": "ParameterList",
-                "src": "188:0:7"
+                "src": "188:0:9"
               }
             ],
-            "id": 2413,
+            "id": 2556,
             "name": "FunctionDefinition",
-            "src": "142:47:7"
+            "src": "142:47:9"
           },
           {
             "attributes": {
@@ -388,7 +388,7 @@
               ],
               "name": "swapYourTokenForEth",
               "overrides": null,
-              "scope": 2417,
+              "scope": 2560,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -401,9 +401,9 @@
                   ]
                 },
                 "children": [],
-                "id": 2414,
+                "id": 2557,
                 "name": "ParameterList",
-                "src": "222:2:7"
+                "src": "222:2:9"
               },
               {
                 "attributes": {
@@ -412,24 +412,24 @@
                   ]
                 },
                 "children": [],
-                "id": 2415,
+                "id": 2558,
                 "name": "ParameterList",
-                "src": "233:0:7"
+                "src": "233:0:9"
               }
             ],
-            "id": 2416,
+            "id": 2559,
             "name": "FunctionDefinition",
-            "src": "194:40:7"
+            "src": "194:40:9"
           }
         ],
-        "id": 2417,
+        "id": 2560,
         "name": "ContractDefinition",
-        "src": "27:210:7"
+        "src": "27:210:9"
       }
     ],
-    "id": 2418,
+    "id": 2561,
     "name": "SourceUnit",
-    "src": "0:239:7"
+    "src": "0:239:9"
   },
   "compiler": {
     "name": "solc",
@@ -437,7 +437,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-01-27T14:33:17.768Z",
+  "updatedAt": "2023-01-28T18:32:32.718Z",
   "devdoc": {
     "methods": {}
   },
